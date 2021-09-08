@@ -10,3 +10,4 @@ module.exports = new Command({
         msg.edit(`Ah, hey! Ping: ${client.ws.ping} ms. \nMessage Ping: ${msg.createdTimestamp - message.createdTimestamp} ms.`);
     }
 });
+// hi
