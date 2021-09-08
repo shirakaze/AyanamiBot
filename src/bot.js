@@ -3,9 +3,10 @@ const Client = require("./Structures/Client.js");
 const config = require("./Data/config.json");
 const client = new Client();
 
+client.commands = new Discord.Collection();
+
 client.start(config.token);
 
-client.commands = new Discord.Collection();
 
 // client.on("ready", () => {
 //     console.log(`Ayano is logged in as ${client.user.tag}`)

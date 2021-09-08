@@ -5,16 +5,16 @@ module.exports = new Event("messageCreate", (client, message) => {
     if (message.content == "hello") message.reply("Konnichiwa!");
     if (!message.content.startsWith(client.prefix)) return;
 
-    const args = message.content.substring(client.prefix.length).split(/ +/)
+    const args = message.content.slice(client.prefix.length).trim().split(/ +/);
     
-    const command = client.commands.find(cmd => cmd.name == args[1]);
+    const command = client.commands.find(cmd => cmd.name == args[0]);
     console.log(args);
 
     if (!command) return message.reply("That isn't a valid command!");
 
     command.run(message, args, client);
 
-    switch (args[1]) {
+    switch (args[0]) {
         case "hello":
             return message.reply("Konnichiwa!");
 
