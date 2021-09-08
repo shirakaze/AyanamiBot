@@ -1,0 +1,31 @@
+{
+  "name": "ayano",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shirakaze/AyanoBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shirakaze/AyanoBot/issues"
+  },
+  "homepage": "https://github.com/shirakaze/AyanoBot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/opus": "^0.6.0",
+    "@discordjs/rest": "0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
+    "canvas": "^2.8.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "distube": "^3.0.0-beta.37",
+    "fs": "0.0.1-security"
+  }
+}
