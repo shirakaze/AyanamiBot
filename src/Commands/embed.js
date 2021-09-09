@@ -20,23 +20,9 @@ module.exports = new Command({
                     name: "Name",
                     value: "Tateyama Ayano / 楯山 文乃 / アヤノ",
                     inline: "false"
-                },
-                {
-                    name: "Age",
-                    value: "18 (Current) / 16 (Physical Age)",
-                    inline: "false"
-                },
-                {
-                    name: "Birthday",
-                    value: "November 22",
-                    inline: "false"
-                },
-                {
-                    name: "Ability",
-                    value: "Favoring Eyes",
-                    inline: "false"
                 }
-            );
+            )
+            .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
 
         message.channel.send({ embeds: [embed] });
     }
