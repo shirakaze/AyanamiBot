@@ -47,7 +47,7 @@ module.exports = new Command({
                     inline: true
                 }
             )
-                .setFooter("It's nothing, heh.")
+            .setFooter("It's nothing, heh.")
 
         message.channel.send({ embeds: [embed] });
     }
