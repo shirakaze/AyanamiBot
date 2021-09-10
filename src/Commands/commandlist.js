@@ -21,6 +21,11 @@ module.exports = new Command({
                     inline: false
                 },
                 {
+                    name: "clear",
+                    value: "Deletes a specified number of messages",
+                    inline: false
+                },
+                {
                     name: "commands",
                     value: "Displays this list",
                     inline: false
