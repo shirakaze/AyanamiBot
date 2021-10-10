@@ -14,7 +14,7 @@ module.exports = new Command({
 
         const amountParsed = parseInt(amount);
         
-        if (amountParsed > 50) return message.reply("Hey, a maximum of only 50 messages can be cleared at one time!");
+        if (amountParsed > 100) return message.reply("Hey, a maximum of only 100 messages can be cleared at one time!");
 
         message.channel.bulkDelete(amountParsed + 1);
 

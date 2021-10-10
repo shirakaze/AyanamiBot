@@ -1,7 +1,7 @@
 const Event = require("../Structures/Event.js");
 
 module.exports = new Event("ready", (client) => {
-    console.log(`Ayano is logged in as ${client.user.tag}`);
+    console.log(`Ayanami is logged in as ${client.user.tag}`);
     client.user.setPresence({ activites: [{ name: "Those secret agents, I wonder if I have become their 'big sister' now?" }], type: "WATCHING", status: 'online' })
 });
 

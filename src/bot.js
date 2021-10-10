@@ -1,12 +1,24 @@
 const Discord = require("discord.js");
 const Client = require("./Structures/Client.js");
 const config = require("./Data/config.json");
-const client = new Client();
+const musicPlayer = require('./Structures/Player')
 
+const client = new Client();
+// const player = new musicPlayer(client).newPlayer(client)
+// module.exports = player
 client.commands = new Discord.Collection();
 
 client.start(config.token);
 
+// Start of music commands
+
+// player.on("trackStart", (queue, track) => {
+//     queue.metadata.channel.semd()
+// })
+
+
+
+// Experimental
 
 // client.on("ready", () => {
 //     console.log(`Ayano is logged in as ${client.user.tag}`)

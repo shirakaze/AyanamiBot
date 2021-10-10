@@ -1,3 +1,4 @@
-# AyanoBot
-Discord bot Ayano repository
+# AyanamiBot
+
+Discord.js bot Ayanami repository
 haha i suck

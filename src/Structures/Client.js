@@ -2,8 +2,9 @@ const Discord = require("discord.js");
 const Command = require("./Command.js");
 const Event = require("./Event.js");
 const config = require("../Data/config.json");
-const intents = new Discord.Intents(32767);
+const intents = new Discord.Intents(641);
 const fs = require("fs");
+const { Player } = require("discord-player")
 
 class Client extends Discord.Client {
     constructor() {
@@ -43,5 +44,4 @@ class Client extends Discord.Client {
         this.login(token);
     }
 }
-
-module.exports = Client;
+module.exports = Client
